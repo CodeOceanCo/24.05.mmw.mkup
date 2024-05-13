@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">
+		<title>Finding Heroes</title>
+		<!-- <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico" /> -->
+		<link rel="stylesheet" type="text/css" href="../css/layout.css" />
+		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+		<script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script type="text/javascript" src="../js/common.js"></script>
+		<script>
+		$( document ).ready( function() {
+			$('.globalNav').hover(function() {
+			  $("#header").addClass('over');
+			}, function(){
+			  $("#header").removeClass('over');
+			});
+		});
+		</script>
+	</head>
+	<body>
+		<!-- Wrap -->
+		<div id="wrap">
+			<!-- header -->
+			<div id="header">
+				<header>
+					<h1><a href="main.html">Finding Heroes</a></h1>
+				</header>
+			</div>
+			<!-- //header -->
+			<hr/>
+			<!-- container -->
+			<div id="container">
+				<div class="mainTopImg"></div>
+				<section clas="mainContents">
+					<article>
+						추모게시판 최신글
+					</article>
+					<article>
+						 영상 게시판 최신글
+					</article>
+					<article>
+						 이벤트 게시판 최신글
+					</article>
+					<article>
+						 공지사항 게시판 최신글
+					</article>
+					<article>
+						 안내 최신글
+					</article>
+					<article>
+						 언론보도 최신글
+					</article>
+					<article>
+						 관련 기관
+					</article>
+				</section>
+			</div>
+			<!-- //container -->
+			<!-- footer -->
+			<div id="footer">
+				<footer>
+					<strong>국가보혼부</strong>
+				</footer>
+			</div>
+			<!-- //footer -->
+		</div>
+		<!-- //Wrap -->
+	</body>
+</html>

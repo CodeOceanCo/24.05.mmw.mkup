@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi" />
+		<title>Finding Heroes</title>
+		<!-- <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico" /> -->
+		<link rel="stylesheet" type="text/css" href="../css/layout.css" />
+		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+		<script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script type="text/javascript" src="../js/common.js"></script>
+	</head>
+	<body>
+		<!-- Wrap -->
+		<div id="wrap">
+			<!-- header -->
+			<div id="header">
+				<header>
+					<h1><a href="main.html">Finding Heroes</a></h1>
+				</header>
+			</div>
+			<!-- //header -->
+			<hr/>
+			<!-- container -->
+			<div id="container">
+			<section>
+				<div class="writeTit">
+					<h2>추모 글쓰기</h2>
+				</div>
+				<div class="content">
+					<article>
+						<!-- page layout -->
+						<div>
+							<!-- Write -->
+							<div class="tws">
+								<dl>
+									<dt>닉네임</dt>
+									<dd><input type="text" placeholder="닉네임을 입력해주세요." /></dd>
+								</dl>
+								<dl>
+									<dt>제목</dt>
+									<dd><input type="text" placeholder="제목을 입력해주세요."  /></dd>
+								</dl>
+								<dl>
+									<dt>영웅 선택</dt>
+									<dd>
+										<script>
+											$(document).ready(function(){
+												cSelect("cSelect");
+											});
+										</script>
+										<div class="cSelect" id="cSelect">
+											<em class="sValue">추모를 남길 영웅을 선택해주세요.</em>
+											<div class="cArea" style="display:none">
+												<span>Alex wang</span>
+												<span>Alex wang</span>
+												<span>Alex wang</span>
+											</div>
+										</div>
+									</dd>
+								</dl>
+								<dl>
+									<dt>추모 내용*</dt>
+									<dd><textarea class="h20" placeholder="영웅에게 추모할 내용을 남겨보세요."></textarea></dd>
+								</dl>
+								<dl>
+									<dt>사진 첨부</dt>
+									<dd>
+										<div class="fileSet">
+											<span class="fileFind">
+												<input type="file" id="file1" />
+												<label for="file1">첨부할 사진을 선택해주세요.</label>
+											</span> <!--파일선택:버튼만있는형식:초록색버전-->
+											<span class="loadIng" style="display:none;">업로드 중</span>
+											<button class="loadFail" style="display:none;">업로드 실패</button> <!--파일업로드실패-->
+											<div style="display:none;">
+												<strong class="loadEnd">
+													<em>샘플 데이터.png</em>
+													<button>취소</button>
+												</strong>
+												<strong class="loadEnd">
+													<em>샘플 데이터.png</em>
+													<button>취소</button>
+												</strong>
+												<strong class="loadEnd">
+													<em>샘플 데이터.png</em>
+													<button>취소</button>
+												</strong>
+											</div>
+										</dd>
+									</dl>
+							</div>
+							<!--//Write -->
+							<!-- Btn -->
+							<div class="btnArea">
+								<a href="memorial.html" class="btnW">취소하기</a>
+								<a href="memorial_view.html" class="btnB">추모글 등록하기</a>
+							</div>
+							<!--//Btn -->
+						</div>
+						<!-- //page layout -->
+					</article>
+				</div>
+			</section>
+			</div>
+			<!-- //container -->
+			<!-- footer -->
+			<div id="footer">
+				<footer>
+					<strong>국가보혼부</strong>
+				</footer>
+			</div>
+			<!-- //footer -->
+		</div>
+		<!-- //Wrap -->
+	</body>
+</html>

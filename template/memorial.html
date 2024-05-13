@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi" />
+		<title>Finding Heroes</title>
+		<!-- <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico" /> -->
+		<link rel="stylesheet" type="text/css" href="../css/layout.css" />
+		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+		<script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script type="text/javascript" src="../js/common.js"></script>
+	</head>
+	<body>
+		<!-- Wrap -->
+		<div id="wrap">
+			<!-- header -->
+			<div id="header">
+				<header>
+					<h1><a href="main.html">Finding Heroes</a></h1>
+				</header>
+			</div>
+			<!-- //header -->
+			<hr/>
+			<!-- container -->
+			<div id="container">
+			<section>
+				<div class="topImg"><img src="../images/img_sub.png" alt="" /></div>
+				<div class="listTit">
+					<h2>추모 게시판</h2>
+					<button class="btnW" id="alertBtn1">추모글 쓰기</button>
+				</div>
+				<div class="content">
+					<article>
+						<!-- page layout -->
+						<div><!-- class 없어도 유지 -->
+							<!-- List search -->
+							<div class="listSearch">
+								<input type="text" placeholder="영웅 이름을 검색해보세요" />
+								<button class="btnB sm">검색</button>
+							</div>
+							<!--//List search-->
+							<!-- List -->
+			        <div class="tls">
+			          <table>
+			            <colgroup>
+			              <col width="50">
+				            <col width="450">
+				            <col width="140">
+				            <col width="440">
+				            <col width="210">
+			            </colgroup>
+			            <thead>
+			              <tr>
+											<th>No</th>
+											<th>제목</th>
+											<th>영웅이름</th>
+											<th class="lgrid">
+												<div>
+													<span class="lwrite">글쓴이</span>
+													<span class="ldate">작성시간</span>
+												</div>
+											</th>
+											<th class="lgrid">
+												<div>
+													<span class="lviews">조회수</span>
+													<span class="lwreath">좋아요</span>
+												</div>
+											</th>
+			              </tr>
+			            </thead>
+			            <tbody>
+			              <!--Loop-->
+			              <tr>
+			                <td class="no">22</td>
+											<td class="subject"><a href="memorial_view.html">추모합니다.</a></td>
+											<td class="hero">Alex wang</td>
+											<td class="lgrid listTTxt">
+												<div>
+													<span class="lwrite">관리자</span>
+													<span class="ldate">2021-02-15</span>
+												</div>
+											</td>
+											<td class="lgrid listBTxt">
+												<div>
+													<span class="lviews">200</span>
+													<span class="lwreath">200</span>
+													<em class="lmedal">200</em>
+												</div>
+											</td>
+			              </tr>
+			              <!--//Loop-->
+			              <tr>
+			                <td class="no">21</td>
+											<td class="subject"><a href="memorial_view.html">추모합니다.</a></td>
+											<td class="hero">Alex wang</td>
+											<td class="lgrid listTTxt">
+												<div>
+													<span class="lwrite">관리자</span>
+													<span class="ldate">2021-02-15</span>
+												</div>
+											</td>
+											<td class="lgrid listBTxt">
+												<div>
+													<span class="lviews">200</span>
+													<span class="lwreath">200</span>
+													<em class="lmedal">200</em>
+												</div>
+											</td>
+			              </tr>
+			              <tr>
+			                <td class="no">20</td>
+											<td class="subject"><a href="memorial_view.html">추모합니다.</a></td>
+											<td class="hero">Alex wang</td>
+											<td class="lgrid listTTxt">
+												<div>
+													<span class="lwrite">관리자</span>
+													<span class="ldate">2021-02-15</span>
+												</div>
+											</td>
+											<td class="lgrid listBTxt">
+												<div>
+													<span class="lviews">200</span>
+													<span class="lwreath">200</span>
+													<em class="lmedal">200</em>
+												</div>
+											</td>
+			              </tr>
+			              <tr>
+			                <td class="no">19</td>
+											<td class="subject"><a href="memorial_view.html">추모합니다.</a></td>
+											<td class="hero">Alex wang</td>
+											<td class="lgrid listTTxt">
+												<div>
+													<span class="lwrite">관리자</span>
+													<span class="ldate">2021-02-15</span>
+												</div>
+											</td>
+											<td class="lgrid listBTxt">
+												<div>
+													<span class="lviews">200</span>
+													<span class="lwreath">200</span>
+													<em class="lmedal">200</em>
+												</div>
+											</td>
+			              </tr>
+			              <!-- 데이터 없을 경우 -->
+			              <!-- <tr><td colspan="5" class="noneData">등록된 데이터가 없습니다.</td></tr> -->
+			              <!-- //데이터 없을 경우 -->
+			            </tbody>
+			          </table>
+			        </div>
+							<!--//List -->
+							<div class="paginate">
+								<span>
+									<a class="first">처음</a>
+									<a class="prev">이전</a>
+									<a class="on">1</a>
+									<a>2</a>
+									<a>3</a>
+									<a>4</a>
+									<a>5</a>
+									<a class="next">다음</a>
+									<a class="last">마지막</a>
+								</span>
+							</div>
+						</div>
+						<!-- //page layout -->
+					</article>
+				</div>
+			</section>
+			</div>
+			<!-- //container -->
+			<!-- footer -->
+			<div id="footer">
+				<footer>
+					<strong>국가보혼부</strong>
+				</footer>
+			</div>
+			<!-- //footer -->
+		</div>
+		<!-- //Wrap -->
+		<script>
+			$(document).ready(function(){
+				popupOpen("alertBtn1","alertDim","alertPop1");
+				popupClose("alertPopClose1","alertDim","alertPop1");
+			});
+		</script>
+		<!-- alert 팝업 -->
+		<div class="alertDim" style="display:none;">
+			<!-- 기본 팝업 -->
+			<div class="alertPop loginPop active" id="alertPop1">
+				<h1 class="tt">로그인하기</h1>
+				<button class="btnPClose" id="alertPopClose1">닫기</button>
+				<div class="pBack">
+					<div class="pData">
+						<p>간편 로그인을 진행하고 <br/>추모 글을 남겨보세요!</p>
+					</div>
+				</div>
+				<div class="loginChoice">
+					<a href="memorial_write.html" class="google">Google로 로그인</a>
+					<a href="memorial_write.html" class="apple">시작하기</a>
+				</div>
+			</div>
+			<!-- //기본 팝업 -->
+		</div>
+		<!-- //alert 팝업 -->
+	</body>
+</html>

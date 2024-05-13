@@ -1,0 +1,154 @@
+@import url("font.css");
+@import url("common.css");
+/*===================================================================
+* INFORMATION
+* -------------------------------------------------------------------
+* @Author : Cho, lexy (lexycho@gmail.com)
+* @File Name: layout.css
+* @Create Date: 2022-09-15
+* @Last Update Date: N/A
+* @History: N/A
+* ====================================================================*/
+/* basic */
+#wrap {position:relative;clear:left;display:flex;flex-direction:column;align-items:center;min-height:100dvh;text-align:center;}
+/* header */
+#header {flex-shrink:0;position:relative;padding:35px 40px 0;height:100px;}
+#header h1 {display:flex;justify-content:center;align-items:center;}
+#header h1 a {display:inline-block;width:313px;height:40px;text-indent:-9999px;overflow:hidden;background:url("../images/img_logo.svg") no-repeat center;background-size:100%;}
+/* container */
+#container {position:relative;padding:0;flex-grow:1;padding:0 75px;width:100%;max-width:1440px;}
+#container .topImg img {width:100%;}
+[class*=Tit] {display:flex;justify-content:space-between;align-items:center;padding:30px 0 38px;}
+[class*=Tit] h2 {display:inline-block;width:159px;height:40px;text-indent:-9999px;overflow:hidden;background:url("../images/memory_tit.svg") no-repeat center;background-size:100%;}
+.writeTit {justify-content:center;padding:0 0 20px;border-bottom:2px solid #fff;}
+.writeTit h2 {background-image:url("../images/memory_tit2.svg")}
+.viewTit {justify-content:center;padding:0 0 20px;border-bottom:2px solid #fff;}
+.viewTit h2 {background-image:url("../images/memory_tit3.svg")}
+/* footer */
+#footer {flex-shrink:0;height:176px;padding-top:37px;width:100%;background:#000;}
+#footer footer {padding:10px;}
+#footer strong {display:inline-block;width:161px;height:52px;text-indent:-999px;overflow:hidden;background:url("../images/fLogo.png") no-repeat center;background-size:cover;}
+/* ======== Main Layout ======== */
+/* ======== Sub Layout ======== */
+/* list search */
+.listSearch {display:flex;gap:8px;padding-bottom:80px;}
+.listSearch input {height:45px;}
+.listSearch .btnB {flex-shrink:0;width:70px;}
+/* table list style */
+.tls table {width:100%;border-collapse:collapse;border-top:1px solid #9A9A9A;border-bottom:1px solid #9A9A9A;text-align:center;}
+.tls table th {padding:0 10px;height:35px;box-sizing:border-box;border-bottom:1px solid #fff;background:#000;}
+.tls table td {padding:10px 10px;height:52px;text-align:center;word-break:break-all;vertical-align:middle;box-sizing:border-box;border-bottom:1px solid #9A9A9A;}
+.tls table thead th {height:57px;}
+.tls .lgrid {padding:0 !important;}
+.tls .lgrid div {display:flex;justify-content:space-between;align-items:center;text-align:center;}
+.tls .lgrid div em {display:none;}
+.tls .lgrid div * {width:50%;}
+/* table view style */
+.tvs {max-width:600px;width:100%;margin:0 auto;padding:20px 0;text-align:left;}
+.tvs .tvsHead {display:flex;justify-content:space-between;align-items:center;}
+.tvs .tvsHead strong {font-size:25px;}
+.tvs .tvsHead [class*=btn] {width:77px;margin-left:15px;}
+.tvs .tvsDate {display:flex;align-items:center;padding:10px 0 0;font-size:18px;}
+.tvs .tvsDate em {display:inline-block;height:14px;padding-left:10px;margin-left:10px;line-height:1;font-size:16px;border-left:1px solid #DDD;}
+.tvs .tvsHero {display:flex;align-items:center;height:43px;margin:20px 0 0;padding:0 26px;color:#fff;font-size:15px;border-radius:10px;background:#3A4981;}
+.tvs .tvsHero strong {display:inline-block;margin:0 0 0 8px;color:#fff;font-size:15px;}
+.tvs .tvsContents {padding:30px 0 0;font-size:15px}
+.tvs .tvsfile {padding-top:10px;}
+.tvs .tvsfile img {max-width:600px;width:auto;}
+.tvs .tvsEtc {display:flex;justify-content:space-between;align-items:center;padding-top:45px;}
+.tvs .tvsEtc span * {display:inline-block;height:24px;padding-left:30px;text-align:left;line-height:1.8;font-size:15px;border:none;background-color:transparent;background-image:url('../images/ic_wreath.svg');background-repeat:no-repeat;background-position:center left;background-size:auto 24px;}
+.tvs .tvsEtc span .btnWreath {background-image:url('../images/ic_wreath.svg');background-size:auto 22px;}
+.tvs .tvsEtc span .btnMedal {margin-left:20px;background-image:url('../images/ic_medal.svg');}
+.tvs .tvsEtc .btnShare {width:99px;height:40px;color:#2B2B2B;border:1px solid #D8DDE5;border-radius:5px;background:#fff;}
+.tvs .tvsEtc .btnShare::before {content:'';display:inline-block;width:16px;height:16px;margin:-3px 5px 0 0;vertical-align:middle;background:url("../images/ic_share.svg") no-repeat center;background-size:100%;}
+/* commentSet */
+.commentBack {padding:20px 0 30px;border-top:2px solid #fff;}
+.commentSet {max-width:600px;width:100%;margin:0 auto;}
+.commentSet .commentNum {padding:0 0 15px;font-size:15px;text-align:left;}
+.commentSet .commentNum strong {display:inline-block;padding-left:8px;color:#6988FF;font-size:15px;}
+.commentSet .commentList li {padding:25px 17px 15px 25px;border-radius:10px;background:#F4F8FF;}
+.commentSet .commentList li ~ li {margin-top:20px;}
+.commentSet .commentList li div {display:flex;justify-content:space-between;align-items:center}
+.commentSet .commentList li div strong {color:#333333;}
+.commentSet .commentList li div strong em {display:inline-block;padding-left:10px;margin-left:10px;line-height:1;color:#6A768C;border-left:1px solid #DDD;}
+.commentSet .commentList li div span button {font-size:12px;color:#003961;border:none;background:none;}
+.commentSet .commentList li div span button ~ button {margin-left:18px;}
+.commentSet .commentList li div span .declare {color:#E61C1C;}
+.commentSet .commentList li p {padding:12px 0 0 0;text-align:left;line-height:1.8;color:#626873;}
+.commentSet .commentWrite {padding:30px 0 0;font-size:15px;text-align:left;}
+.commentSet .commentWrite strong {display:block;padding:0 0 15px;}
+.commentSet .commentWrite div {position:relative;}
+.commentSet .commentWrite div .btnPost {position:absolute;right:0;top:0;padding:20px 23px;color:#6988FF;font-size:15px;border:none;background:none;}
+.commentSet .commentWrite textarea {padding:20px 25px;border-color:#BFC3C8;height:180px;background:#222;}
+/* table write style */
+.tws {max-width:600px;width:100%;margin:0 auto;}
+.tws * {font-size:16px}
+.tws dl {padding-top:30px;text-align:left;}
+.tws dl dt {height:28px;}
+.tws .cSelect {width:100%}
+.tws .cSelect .sValue {line-height:3}
+/**/
+.btnArea {clear:left;display:inline-block;max-width:600px;width:100%;margin:0 auto;padding:50px 0;text-align:right;}
+.btnArea [class*=btn] {width:135px;}
+.btnArea [class*=btn] ~ [class*=btn] {margin-left:20px;}
+.btnArea.tL {padding:15px 0 50px;border-top:1px solid #fff;}
+.btnList {display:inline-flex;align-items:center;justify-content:center;width:99px !important;height:46px;font-size:16px;gap:11px;border-radius:4px;border:1px solid #DCDCDC;background:transparent}
+.btnList::before {content:'';display:inline-block;width:24px;height:24px;background:url("../images/ic_list.svg") no-repeat center;background-size:100%;}
+/* ======== Popup Layout ======== */
+.loginPop .pBack .pData p {padding:20px 20px 0;}
+.loginPop .loginChoice * {margin-top:25px;display:flex;align-items:center;justify-content:center;width:100%;height:48px;font-weight:500;font-size:16px;color:#777;border-radius:3px;border:1px solid #959595;}
+.loginPop .loginChoice *::before {content:'';display:inline-block;margin-right:3px;}
+.loginPop .loginChoice .google::before {width:36px;height:34px;background:url("../images/ic_login_google.png") no-repeat center;}
+.loginPop .loginChoice .apple {color:#fff;background:#000;}
+.loginPop .loginChoice .apple::before {width:104px;height:31px;background:url("../images/ic_login_apple.png") no-repeat center;}
+/* ====================== */
+/* Responsive */
+/* ====================== */
+@media all and (max-width:860px) {
+	.paginate {padding:14px 0;}
+	.paginate a {width:30px;height:30px;font-size:13px;}
+	/* ======== Common Layout ======== */
+	#header {padding-top:12px;height:67px;}
+	#header h1 a {width:196px;height:40px;}
+	#container {padding:0 20px;}
+	[class*=Tit] {padding:19px 0 20px;align-items:flex-start;flex-direction:column;}
+	[class*=Tit] h2 {width:106px;height:40px;}
+	[class*=Tit] .btnW {width:100%;}
+	.writeTit {justify-content:center;align-items:center;padding:0 0 5px;}
+	.viewTit {justify-content:center;align-items:center;padding:0 0 5px;}
+	#footer {height:110px;padding-top:0;}
+	/* ======== Sub Layout ======== */
+	.listSearch {padding-bottom:20px;}
+	.tls table {border:none;}
+	.tls table colgroup {display:none;}
+	.tls table thead {display:none;}
+	.tls table tbody {display:block;}
+	.tls table tbody tr {position:relative;display:flex;flex-direction:column;justify-content:flex-start;align-items:flex-start;padding:17px 15px 15px 15px;border:1px solid #fff;border-radius:10px;background:#444;}
+	.tls table tbody tr ~ tr {margin-top:12px;}
+	.tls table tr td {height:auto;padding:0;text-align:left;border-bottom:0;}
+	.tls table tr td * {font-size:15px;}
+	.tls table tr .no::before {content:'NO. '}
+	.tls table tr .subject {display:block;padding:15px 0 5px;}
+	.tls table tr .hero {display:block;padding-bottom:15px;font-size:13px;}
+	.tls table tr .hero::before {content:'영웅 '}
+	.tls table tr .listTTxt {position:absolute;right:15px;top:15px;white-space:nowrap;}
+	.tls table tr .listTTxt div {display:inline-block;}
+	.tls table tr .listTTxt div * ~ * {margin-left:10px;}
+	.tls table tr .listBTxt {width:100%;}
+	.tls table tr .listBTxt div {display:flex;width:100%;}
+	.tls table tr .listBTxt div * {display:inline-block;height:24px;padding-left:28px;text-align:left;line-height:1.8;font-size:14px;background-image:url('../images/ic_view.svg');background-repeat:no-repeat;background-position:center left;background-size:auto 24px;}
+	.tls table tr .listBTxt div .lviews {width:60%;background-image:url('../images/ic_view.svg');}
+	.tls table tr .listBTxt div .lviews::before {content:'조회수 '}
+	.tls table tr .listBTxt div .lwreath {background-image:url('../images/ic_wreath.svg');background-size:auto 22px;}
+	.tls table tr .listBTxt div .lwreath::before {content:'헌화 '}
+	.tls table tr .listBTxt div .lmedal {display:inline-block;background-image:url('../images/ic_medal.svg');}
+	.tls table tr .listBTxt div .lmedal::before {content:'훈장 '}
+	.tvs .tvsHead {flex-direction:column-reverse;align-items:flex-start;}
+	.tvs .tvsHead span {display:block;width:100%;padding-bottom:20px;text-align:right;}
+	.tvs .tvsHead strong {font-size:20px;}
+	.btnArea {padding:40px 0;text-align:center;}
+}
+@media all and (max-width:360px) {
+	/* ======== Popup Layout ======== */
+	.alertPop {width:88%;}
+}

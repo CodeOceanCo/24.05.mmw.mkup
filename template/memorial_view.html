@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi" />
+		<title>Finding Heroes</title>
+		<!-- <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico" /> -->
+		<link rel="stylesheet" type="text/css" href="../css/layout.css" />
+		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+		<script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script type="text/javascript" src="../js/common.js"></script>
+	</head>
+	<body>
+		<!-- Wrap -->
+		<div id="wrap">
+			<!-- header -->
+			<div id="header">
+				<header>
+					<h1><a href="main.html">Finding Heroes</a></h1>
+				</header>
+			</div>
+			<!-- //header -->
+			<hr/>
+			<!-- container -->
+			<div id="container">
+			<section>
+				<div class="viewTit">
+					<h2>추모 게시글</h2>
+				</div>
+				<div class="content">
+					<article>
+						<!-- page layout -->
+						<div>
+							<!-- View -->
+							<div class="tvs">
+								<div class="tvsHead">
+									<strong>추모합니다, 기억하겠습니다.</strong>
+									<span>
+										<button class="btnW ss" id="alertBtn2">삭제하기</button>
+										<button class="btnW ss" id="alertBtn1">신고하기</button>
+									</span>
+								</div>
+								<div class="tvsDate">이현지 <em>2024.04.19</em></div>
+								<div class="tvsHero">영웅 <strong>ALEX WANG</strong></div>
+								<div class="tvsContents">
+									잊지않겠습니다, 지켜주셔서 감사합니다.<br/>
+									추모합니다.
+								</div>
+								<div class="tvsfile"><img src="../images/sample/view.png" alt="" /></div>
+								<div class="tvsEtc">
+									<span>
+										<button class="btnWreath">헌화 200</button>
+										<button class="btnMedal">훈장 200</button>
+									</span>
+									<button class="btnShare">공유하기</button>
+								</div>
+							</div>
+							<!--//View -->
+							<!--comment-->
+							<script>
+							$(document).ready(function(){
+								$(".commentInfo").click(function(){
+									$(this).toggleClass('on');
+									$(".commentList").toggle();
+								});
+								$(".btnPost").click(function(){
+									$(".sampleComment").show();
+								});
+							});
+							</script>
+							<div class="commentBack">
+								<div class="commentSet">
+									<!---->
+									<div class="commentNum">댓글 <strong>2</strong></div>
+									<div class="commentList">
+										<ul>
+											<!-- Comment Loop -->
+											<li>
+													<div>
+														<strong>김*수 <em>2020-02-06</em></strong>
+														<span>
+															<button id="alertBtn31">삭제하기</button>
+															<button class="declare">신고하기</button>
+														</span>
+													</div>
+													<p>저도 잊지않겠습니다.</p>
+											</li>
+											<!-- //Comment Loop -->
+											<li>
+												<div>
+													<strong>이현지 <em>2020-02-06</em></strong>
+													<span>
+														<button id="alertBtn32">삭제하기</button>
+														<button class="declare">신고하기</button>
+													</span>
+												</div>
+												<p>기억하기</p>
+											</li>
+											<li style="display:none;" class="sampleComment">
+												<div>
+													<strong>Admin <em>2020-02-06</em></strong>
+													<span>
+														<button>삭제하기</button>
+														<button class="declare">신고하기</button>
+													</span>
+												</div>
+												<p>새로 등록한 답변글입니다</p>
+											</li>
+										</ul>
+									</div>
+									<!---->
+									<div class="commentWrite">
+										<strong>댓글 남기기</strong>
+										<div>
+											<textarea placeholder="댓글을 작성하세요."></textarea>
+											<input type="button" value="등록" class="btnPost" />
+										</div>
+									</div>
+									<!---->
+								</div>
+							</div>
+							<!--//comment-->
+							<!-- Btn -->
+							<div class="btnArea tL">
+								<a href="memorial.html" class="btnList">목록</a>
+							</div>
+							<!--//Btn -->
+						</div>
+						<!-- //page layout -->
+					</article>
+				</div>
+			</section>
+			</div>
+			<!-- //container -->
+			<!-- footer -->
+			<div id="footer">
+				<footer>
+					<strong>국가보혼부</strong>
+				</footer>
+			</div>
+			<!-- //footer -->
+		</div>
+		<!-- //Wrap -->
+		<script>
+			$(document).ready(function(){
+				popupOpen("alertBtn1","alertDim","alertPop1");
+				popupClose("alertPopClose11","alertDim","alertPop1");
+				popupClose("alertPopClose12","alertDim","alertPop1");
+				popupOpen("alertBtn2","alertDim","alertPop2");
+				popupClose("alertPopClose21","alertDim","alertPop2");
+				popupClose("alertPopClose22","alertDim","alertPop2");
+				popupOpen("alertBtn31","alertDim","alertPop3");
+				popupOpen("alertBtn32","alertDim","alertPop3");
+				popupClose("alertPopClose31","alertDim","alertPop3");
+				popupClose("alertPopClose32","alertDim","alertPop3");
+				popupClose("alertPopClose33","alertDim","alertPop3");
+			});
+		</script>
+		<!-- alert 팝업 -->
+		<div class="alertDim" style="display:none;">
+			<!-- 기본 팝업 -->
+			<div class="alertPop" id="alertPop1">
+				<h1 class="tt">신고하기</h1>
+				<button class="btnPClose" id="alertPopClose1">닫기</button>
+				<div class="pBack">
+					<div class="pData">
+						<p class="red">해당 게시글을 관리자에게 신고합니다</p>
+					</div>
+				</div>
+				<div class="pBtn">
+					<button class="btnW sm" id="alertPopClose11">취소하기</button>
+					<button class="btnB sm" id="alertPopClose12">신고하기</button>
+				</div>
+			</div>
+			<!-- //기본 팝업 -->
+			<!-- 기본 팝업 -->
+			<div class="alertPop" id="alertPop2">
+				<h1 class="tt">게시글 삭제하기</h1>
+				<button class="btnPClose" id="alertPopClose21">닫기</button>
+				<div class="pBack">
+					<div class="pData">
+						<p>게시글을 삭제하시겠습니까?</p>
+					</div>
+				</div>
+				<div class="pBtn">
+					<button class="btnW sm" id="alertPopClose22">취소하기</button>
+					<a class="btnR sm" href="memorial.html">삭제하기</a>
+				</div>
+			</div>
+			<!-- //기본 팝업 -->
+			<!-- 기본 팝업 -->
+			<div class="alertPop" id="alertPop3">
+				<h1 class="tt">댓글 삭제하기</h1>
+				<button class="btnPClose" id="alertPopClose31">닫기</button>
+				<div class="pBack">
+					<div class="pData">
+						<p>댓글을 삭제하시겠습니까?</p>
+					</div>
+				</div>
+				<div class="pBtn">
+					<button class="btnW sm" id="alertPopClose32">취소하기</button>
+					<button class="btnR sm" id="alertPopClose33">삭제하기</button>
+				</div>
+			</div>
+			<!-- //기본 팝업 -->
+		</div>
+		<!-- //alert 팝업 -->
+	</body>
+</html>
